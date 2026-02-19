@@ -1,0 +1,18 @@
+/* TEST STYLE - New Background Version */
+
+body {
+    background: linear-gradient(135deg, #1e3a8a, #0f172a);
+    background-size: cover;
+    transition: background 0.5s ease-in-out;
+}
+
+.card {
+    border: 2px solid #3b82f6;
+    box-shadow: 0 20px 80px rgba(59, 130, 246, 0.4);
+}
+
+.score {
+    color: #22c55e !important;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
