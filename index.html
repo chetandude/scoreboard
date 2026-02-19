@@ -1,16 +1,92 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <h1>Soccer Final League </h1>
-        <h2><b>Manchester United Vs Chelsea</b></h2>
-        <h2 id="count-el">0</h2>
-        <button id="increment-btn" onclick="increment()">INCREMENT</button>
-        <button id="save-btn" onclick="save()">SAVE</button>
-        <p id="save-el">Previous entries: </p>
-        <script src="index.js">
-            nnerText
-        </script>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="index.css" />
+  <title>Soccer Final League — Scoreboard</title>
+</head>
+
+<body>
+  <div class="bg-overlay"></div>
+
+  <main class="container">
+    <header class="header">
+      <p class="league">Soccer Final League</p>
+
+      <h1 class="title">Manchester United <span class="vs">VS</span> Chelsea</h1>
+
+      <div class="meta">
+        <div class="pill">Premium Scoreboard</div>
+        <div class="pill">Shortcuts: U / C / S / Space</div>
+      </div>
+    </header>
+
+    <section class="card">
+      <!-- Timer -->
+      <div class="top-row">
+        <div class="timer">
+          <p class="label">Match Timer</p>
+          <p id="timer-el" class="timer-value">00:00</p>
+        </div>
+
+        <div class="timer-actions">
+          <button class="btn btn-secondary" onclick="toggleTimer()">Start / Pause</button>
+          <button class="btn btn-ghost" onclick="resetTimer()">Reset</button>
+        </div>
+      </div>
+
+      <!-- Scoreboard -->
+      <div class="scoreboard">
+        <div class="team-card team-red">
+          <p class="team-name">Manchester United</p>
+          <p id="mu-score" class="score">0</p>
+          <div class="team-actions">
+            <button class="btn btn-primary" onclick="incrementTeam('mu')">+ Goal</button>
+            <button class="btn btn-ghost" onclick="decrementTeam('mu')">-</button>
+          </div>
+        </div>
+
+        <div class="center-badge">
+          <p class="label">Total Goals</p>
+          <p id="total-score" class="total">0</p>
+        </div>
+
+        <div class="team-card team-blue">
+          <p class="team-name">Chelsea</p>
+          <p id="ch-score" class="score">0</p>
+          <div class="team-actions">
+            <button class="btn btn-primary blue" onclick="incrementTeam('ch')">+ Goal</button>
+            <button class="btn btn-ghost" onclick="decrementTeam('ch')">-</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Actions -->
+      <div class="actions">
+        <button class="btn btn-success" onclick="saveMatch()">Save Match Result</button>
+        <button class="btn btn-warning" onclick="undoLast()">Undo Last Save</button>
+        <button class="btn btn-danger" onclick="resetAll()">Reset All</button>
+      </div>
+
+      <!-- History -->
+      <div class="history">
+        <div class="history-head">
+          <p class="history-title">Match History</p>
+          <p class="hint">Saved with time + score</p>
+        </div>
+
+        <ul id="history-list" class="history-list">
+          <li class="empty">No saved matches yet.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Built with HTML, CSS, and JavaScript • Great for portfolio</p>
+    </footer>
+  </main>
+
+  <script src="index.js"></script>
+</body>
 </html>
