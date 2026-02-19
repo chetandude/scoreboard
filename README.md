@@ -1,67 +1,86 @@
-# Passenger Counter App
+# ScoreLook — Soccer Scoreboard Application
 
-A simple JavaScript practice project that tracks passenger counts with the ability to increment and save entries.
+Live Demo: https://scorelook.netlify.app/
 
-## Overview
-
-This is a beginner-friendly counter application designed to track the number of people entering a space (like a train or bus). It demonstrates fundamental JavaScript concepts including DOM manipulation, event handling, and variable management.
-
-## Features
-
-- **Increment Button**: Click to increase the passenger count by 1
-- **Save Button**: Save the current count and reset the counter to 0
-- **Previous Entries**: Displays a history of all saved entries
-- **Visual Display**: Large, easy-to-read count display with a themed background
-
-## How It Works
-
-1. **Increment**: Click the `INCREMENT` button to add 1 to the current count
-2. **Save**: Click the `SAVE` button to:
-   - Store the current count in the previous entries list
-   - Reset the counter to 0
-   - Prepare for the next count
-
-## Technical Stack
-
-- **HTML**: Semantic structure with buttons and display elements
-- **CSS**: Styled with a train-themed background and responsive button styling
-- **JavaScript (Vanilla)**: DOM manipulation and event handling
-
-## File Structure
-
-```
-├── index.html       # HTML markup for the UI
-├── index.css        # Styling for the counter app
-├── index.js         # JavaScript functionality
-├── README.md        # Project documentation
-└── oldtrain.jpg     # Background image
-```
-
-## Key JavaScript Concepts Demonstrated
-
-- DOM element selection with `getElementById()`
-- Event handling with `onclick` attributes
-- Variable management (`count` tracking)
-- Dynamic text content updates with `textContent`
-- String concatenation for building entry history
-
-## How to Run
-
-1. Open `index.html` in your web browser
-2. Start clicking the `INCREMENT` button to count passengers
-3. Click `SAVE` to record your count and start a new count
-4. View your previous entries below the buttons
-
-## Learning Outcomes
-
-This project is great for practicing:
-- Basic HTML structure and forms
-- CSS styling and layout
-- DOM manipulation with vanilla JavaScript
-- Event-driven programming
-- Simple state management with variables
+ScoreLook is a modern soccer scoreboard web application built using HTML, CSS, and JavaScript. The application simulates a live match environment where users can track scores, manage match history, and control a match timer.
 
 ---
 
-**Status**: Personal JavaScript practice project  
-**Level**: Beginner-friendly
+## Overview
+
+This project demonstrates front-end development fundamentals including layout systems, DOM manipulation, state management, and deployment workflow using Git and Netlify.
+
+The application was developed using a structured branching workflow to safely test features before merging into production.
+
+---
+
+## Features
+
+- Dual team scoreboard (Manchester United vs Chelsea)
+- Match timer (Start, Pause, Reset)
+- Increment and decrement team scores
+- Save match results
+- Undo last saved match
+- Reset all match data
+- Responsive layout for desktop and mobile
+- Continuous deployment via Netlify
+- Feature branch workflow with deploy previews
+
+---
+
+## Technology Stack
+
+- HTML5
+- CSS3 (Flexbox, Grid, Responsive Design)
+- JavaScript (DOM manipulation, event handling, timers)
+- Git and GitHub (Version control and branching workflow)
+- Netlify (Deployment and preview testing)
+
+---
+
+---
+
+## Development Workflow
+
+This project follows a professional Git workflow:
+
+1. Create a feature branch
+2. Develop and test locally
+3. Commit changes incrementally
+4. Push branch to GitHub
+5. Open a Pull Request
+6. Test using Netlify Deploy Preview
+7. Merge into main branch
+8. Automatic production deployment
+
+This workflow ensures production stability and maintainable version control.
+
+---
+
+## Key Concepts Practiced
+
+- Layout design using Flexbox and Grid
+- UI state management
+- Event-driven programming
+- Timer implementation using setInterval
+- Clean commit structure
+- Safe feature merging using Pull Requests
+- Continuous deployment integration
+
+---
+
+## Future Improvements
+
+- LocalStorage persistence for match history
+- Sound effects for scoring events
+- Dark and light theme toggle
+- Match statistics tracking
+- Multi-match session support
+- Backend integration for data storage
+
+---
+
+## Author
+
+Chetan  
+GitHub: https://github.com/chetanbuilds
