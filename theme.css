@@ -1,0 +1,77 @@
+/* ===========================
+   RIVALRY THEME
+   Manchester United vs Chelsea
+   =========================== */
+
+/* Split red vs blue background */
+body {
+    background: linear-gradient(
+        90deg,
+        rgba(185, 28, 28, 0.9) 0%,     /* Manchester Red */
+        rgba(185, 28, 28, 0.7) 50%,
+        rgba(30, 58, 138, 0.7) 50%,    /* Chelsea Blue */
+        rgba(30, 58, 138, 0.9) 100%
+    );
+    background-attachment: fixed;
+}
+
+/* Card upgrade */
+.card {
+    background: rgba(0, 0, 0, 0.75);
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 30px 90px rgba(0, 0, 0, 0.6);
+}
+
+/* Title glow */
+.title {
+    text-shadow: 
+        -2px 0 #b91c1c,
+         2px 0 #1e3a8a,
+         0 0 20px rgba(255,255,255,0.4);
+}
+
+/* Manchester score styling */
+.team-red .score {
+    color: #ef4444;
+    text-shadow: 0 0 20px rgba(239, 68, 68, 0.8);
+}
+
+/* Chelsea score styling */
+.team-blue .score {
+    color: #3b82f6;
+    text-shadow: 0 0 20px rgba(59, 130, 246, 0.8);
+}
+
+/* Center total score gold trophy style */
+.total {
+    color: #facc15;
+    text-shadow: 0 0 25px rgba(250, 204, 21, 0.9);
+}
+
+/* Manchester button */
+.btn-primary {
+    background: linear-gradient(135deg, #7f1d1d, #ef4444);
+}
+
+/* Chelsea button */
+.btn-primary.blue {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+}
+
+/* Hover intensity */
+.btn-primary:hover,
+.btn-primary.blue:hover {
+    filter: brightness(1.15);
+    transform: scale(1.03);
+}
+
+/* Timer golden glow */
+.timer-value {
+    color: #facc15;
+    text-shadow: 0 0 25px rgba(250, 204, 21, 0.8);
+}
+
+/* History styling */
+.history {
+    border-top: 2px solid rgba(255,255,255,0.2);
+}
